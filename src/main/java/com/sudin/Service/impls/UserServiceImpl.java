@@ -15,6 +15,11 @@ public class UserServiceImpl implements UserService {
     private UserRepository userRepository;
 
 
+    @Override
+    public Users findOne(Long id) {
+        return userRepository.findOne(id);
+    }
+
     public List<Users> findAll() {
         return (List<Users>) userRepository.findAll();
     }
@@ -23,6 +28,10 @@ public class UserServiceImpl implements UserService {
         return userRepository.save(users);
     }
 
+    @Override
+    public void removeOne(Long id) {
+        userRepository.delete(id);
+    }
 
 
 }
