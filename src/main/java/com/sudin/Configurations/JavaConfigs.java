@@ -52,4 +52,6 @@ public class JavaConfigs extends WebMvcConfigurerAdapter {
         return messageSource;
     }
 
+
+
 }
