@@ -1,10 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8"/>
     <title>Title</title>
+    <!--<link th:href="@{/resources/css/bootstrap.min.css}" rel="stylesheet"/>-->
+    <link rel="stylesheet" href="webjars/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />-->
 </head>
 <body>
 <h1>Spring Mvc With Thymeleaf</h1>
+
+<div class="container">
+    <div class="table-responsive">
+        <table class="table table-responsive table-hover table-bordered table-stripped table-inverse">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Category</th>
+                <th>List Price</th>
+                <th>Our Price</th>
+                <th>Active?</th>
+                <th>Operation</th>
+            </tr>
+            </thead>
+
+        </table>
+    </div>
+</div>
+
+
 </body>
 </html>
